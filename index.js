@@ -24,3 +24,13 @@ let arr = [10, 20, 30]; // Array
 document.getElementById("p1").textContent = username;
 document.getElementById("p2").textContent = `${username} is ${age} years old!`;
 document.getElementById("p3").textContent = salary;
+
+// arithmatic operators: +, -, *, /, %, ++, --
+let students = 30;
+students = students + 1 // or students += 1;
+students = students - 1
+students = students * 2
+students = students / 2
+// students = students ** 2 // exponent operator
+students = students % 2; // remainder when divided by 2 (modulus)
+console.log(students);
