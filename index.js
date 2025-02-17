@@ -16,13 +16,13 @@ console.log(typeof age); // Shows type
 
 // Data Types: Number, String, Boolean, Object, Array
 let num = 100; // Number
-let username = "John"; // String
+let firstname = "John"; // String
 let isTrue = true; // Boolean
 let obj = {name: "John", age: 21}; // Object
 let arr = [10, 20, 30]; // Array
 
-document.getElementById("p1").textContent = username;
-document.getElementById("p2").textContent = `${username} is ${age} years old!`;
+document.getElementById("p1").textContent = firstname;
+document.getElementById("p2").textContent = `${firstname} is ${age} years old!`;
 document.getElementById("p3").textContent = salary;
 
 // arithmatic operators: +, -, *, /, %, ++, --
@@ -34,3 +34,19 @@ students = students / 2
 // students = students ** 2 // exponent operator
 students = students % 2; // remainder when divided by 2 (modulus)
 console.log(students);
+
+// How to accept User input:
+// 1. Easy Way (Window Prompt)
+
+/* let username;
+username = window.prompt("What is your username: ")
+console.log(username); */
+
+
+// 2. Professional Way (HTML Textbox)
+let username;
+
+document.getElementById("mysubmit").onclick = function(){
+    username = document.getElementById("mytext").value;
+    document.getElementById("myh1").textContent = `Welcome ${username}`
+}   
