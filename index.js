@@ -50,7 +50,6 @@ document.getElementById("mysubmit").onclick = function(){
     username = document.getElementById("mytext").value;
     document.getElementById("myh1").textContent = `Welcome ${username}`
 }   
-*/
 
 // Type conversion 
 let age = window.prompt("How old are you?")
@@ -69,3 +68,20 @@ z = Boolean(z);
 console.log(x, typeof x)
 console.log(y, typeof y)
 console.log(z, typeof z)
+*/
+
+
+// Constants (const) = variable that can't be changed
+const PI = 3.14159
+let radius;
+let circumference;
+
+document.getElementById("mysubmit").onclick = function(){
+    radius = document.getElementById("mytext").value;
+    radius = Number(radius);
+    console.log(radius);
+    circumference = 2 * PI * radius;
+    console.log(`The circumference is ${circumference}.`);
+
+    document.getElementById("result").textContent = `Circumference: ${circumference}`;
+}
