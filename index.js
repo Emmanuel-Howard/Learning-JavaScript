@@ -1,4 +1,4 @@
-// Print using this console.log() function
+/* Print using this console.log() function
 console.log("Hello World!");
 console.log("Hello World #2");
 
@@ -7,7 +7,7 @@ console.log("Hello World #2");
 // document.getElementById("myP").textContent = "How are you?";
 
 // Variables: A decleration (let x) & an assignement (x=100)
-let age = 21;
+// let age = 21;
 let salary = 10.99;
 console.log(age); // console.log is a function that prints to the console for the dev
 console.log(`You are ${age} years old and make ${salary} per hour`)
@@ -40,7 +40,7 @@ console.log(students);
 
 /* let username;
 username = window.prompt("What is your username: ")
-console.log(username); */
+console.log(username); 
 
 
 // 2. Professional Way (HTML Textbox)
@@ -50,3 +50,22 @@ document.getElementById("mysubmit").onclick = function(){
     username = document.getElementById("mytext").value;
     document.getElementById("myh1").textContent = `Welcome ${username}`
 }   
+*/
+
+// Type conversion 
+let age = window.prompt("How old are you?")
+age = Number(age);
+age +=1;
+console.log(age, typeof age)
+
+let x = "pizza";
+let y = "pizza";
+let z = "pizza";
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x, typeof x)
+console.log(y, typeof y)
+console.log(z, typeof z)
