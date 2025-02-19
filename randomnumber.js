@@ -14,5 +14,7 @@ button.onclick = function(){
     let randomNum1 = Math.floor(Math.random() * max) + min;
     let randomNum2 = Math.floor(Math.random() * max) + min;
     let randomNum3 = Math.floor(Math.random() * max) + min;
-    label.textContent = randomNum;
+    label1.textContent = randomNum1;
+    label2.textContent = randomNum2;
+    label3.textContent = randomNum3;
 }
