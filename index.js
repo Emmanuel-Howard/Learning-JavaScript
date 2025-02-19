@@ -84,7 +84,6 @@ document.getElementById("mysubmit").onclick = function(){
 
     document.getElementById("result").textContent = `Circumference: ${circumference}`; 
 }
-*/
 
 // Math
 Math.PI
@@ -96,3 +95,4 @@ console.log(Math.PI)
 // z = Math.floor(x)      (round down)
 let max = Math.max(x,y,z);
 console.log(max) 
+*/
