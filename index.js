@@ -68,7 +68,6 @@ z = Boolean(z);
 console.log(x, typeof x)
 console.log(y, typeof y)
 console.log(z, typeof z)
-*/
 
 
 // Constants (const) = variable that can't be changed
@@ -83,5 +82,17 @@ document.getElementById("mysubmit").onclick = function(){
     circumference = 2 * PI * radius;
     console.log(`The circumference is ${circumference}.`);
 
-    document.getElementById("result").textContent = `Circumference: ${circumference}`;
+    document.getElementById("result").textContent = `Circumference: ${circumference}`; 
 }
+*/
+
+// Math
+Math.PI
+let x = 3.21;
+let y = 2;
+let z = 1;
+console.log(Math.PI)
+// z = Math.round(x)
+// z = Math.floor(x)      (round down)
+let max = Math.max(x,y,z);
+console.log(max) 
