@@ -253,7 +253,7 @@ console.log(firstName);
 console.log(lastName);
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // Method Chaining = Calling one method after another in one continous line of code
 
 // Example of NO Method Chaining
@@ -273,3 +273,18 @@ console.log(username);
 // Example of Method Chaining                      = Using a "." to call multiple methods 
 username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 console.log(username);
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
+// Logical Operators = Used to combine or manipulate boolean values (True / False)
+// AND = &&, OR = ||, NOT = !
+
+const temp = 20;
+
+if(temp > 0 && temp <=30){
+    console.log("The weather is good!")
+}
+--------------------------------------------------------------------------------------------------------------------
+*/
+
+// Strict Equality Operator
