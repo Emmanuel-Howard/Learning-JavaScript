@@ -301,8 +301,8 @@ else{
 }
 --------------------------------------------------------------------------------------------------------------------
 */
-
-// While loop = Repeat some code WHILE some condition is true
+/*
+// while loop = Repeat some code WHILE some condition is true
 
 let username = "";
 
@@ -318,3 +318,23 @@ do{
 }while(username === "" || username === null)
 
     console.log(`Your name is ${username}.`)
+--------------------------------------------------------------------------------------------------------------------
+*/
+
+// for loop = repeat some code a limited amount of times
+
+for(let i = 0; i < 10; i+=2){      // Set i = 0, and add 1 as long as under 10
+    console.log(i);                      
+} 
+
+for(let i = 20; i > 0; i-=1){
+
+    if(i == 13){                   
+        continue               // Skips (Continues) over 13
+        // break               If we break, it breaks the loop
+    }
+    else{
+        console.log(i)
+    }
+}
+    
