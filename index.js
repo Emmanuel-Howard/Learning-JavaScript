@@ -247,12 +247,29 @@ let fullName = "Emmanuel Howard";
 // let firstName = fullName.slice(0, 5)  ;  // Use built-in slice method + index
 // OR: To find names regardless of length
 let firstName = fullName.slice(0, fullName.indexOf(" "));        // Slice from 0 to the first space
-let lastName = fullName.slice(fullName.indexOf(" ") + 1)        // Slice from the letter after the first space
+let lastName = fullName.slice(fullName.indexOf(" ") + 1);       // Slice from the letter after the first space
 
-console.log(firstName)
-console.log(lastName)
+console.log(firstName);
+console.log(lastName);
 --------------------------------------------------------------------------------------------------------------------
 */
 
 // Method Chaining = Calling one method after another in one continous line of code
 
+// Example of NO Method Chaining
+
+let username = window.prompt("Enter your username");
+
+// This program makes the first letter Upper and the others lower 
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+
+let extraChars = username.slice(1); //  Everything after "E"
+extraChars = extraChars.toLowerCase();
+username = letter + extraChars;
+console.log(username);
+
+// Example of Method Chaining                      = Using a "." to call multiple methods 
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+console.log(username);
