@@ -175,6 +175,23 @@ mySubmit.onclick = function(){
         paymentResult.textContent = "You haven't yet selected a payment method...";
     }
     }   
+
+// Ternary Operator ? codeIfTrue : codeIfFalse; (DIDN'T CODE IT)
 */
 
-// Ternary Operator ? codeIfTrue : codeIfFalse;
+// SWITCH = Replaces many else / if statements 
+let day = 4 ;
+
+switch(day){
+    case 1:                       // If case == day, it will execute the code under.
+        console.log("It is Monday")
+        break;                   // Don't forget the break or the switch will continue 
+    case 2:                       
+        console.log("It is Tuesday")
+        break;     
+    case 3:                       
+        console.log("It is Wednesday")
+        break;     
+    default:
+        console.log(`${day} is not a day...`)        // Like an else statement
+}
