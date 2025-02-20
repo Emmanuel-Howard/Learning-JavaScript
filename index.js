@@ -288,3 +288,15 @@ if(temp > 0 && temp <=30){
 */
 
 // Strict Equality Operator
+// = assignment operator
+// = comparison operator (compare if values are equal)
+// === strict equality operator (compare if values & datatype are equal)
+
+const PI = 3.14;
+
+if(PI === "3.14"){                           // That is not Pi, since it's a string  | Remove "" and it is Pi
+    console.log("That is Pi.")
+}
+else{
+    console.log("That is not Pi.")
+}
