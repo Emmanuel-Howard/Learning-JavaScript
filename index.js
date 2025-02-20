@@ -286,12 +286,11 @@ if(temp > 0 && temp <=30){
 }
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // Strict Equality Operator
 // = assignment operator
 // = comparison operator (compare if values are equal)
 // === strict equality operator (compare if values & datatype are equal)
-
 const PI = 3.14;
 
 if(PI === "3.14"){                           // That is not Pi, since it's a string  | Remove "" and it is Pi
@@ -300,3 +299,22 @@ if(PI === "3.14"){                           // That is not Pi, since it's a str
 else{
     console.log("That is not Pi.")
 }
+--------------------------------------------------------------------------------------------------------------------
+*/
+
+// While loop = Repeat some code WHILE some condition is true
+
+let username = "";
+
+while(username === "" || username === null){           // By pressing cancel, username ==- null = Now, you can't cancel
+    username = window.prompt(`Enter your name:`)
+}
+console.log(`Your name is ${username}.`)
+
+// The do while loop: Does the action (winow prompt) at least once before checking the condition
+
+do{
+    username = window.prompt(`Enter your name:`);
+}while(username === "" || username === null)
+
+    console.log(`Your name is ${username}.`)
