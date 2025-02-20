@@ -177,7 +177,6 @@ mySubmit.onclick = function(){
     }   
 
 // Ternary Operator ? codeIfTrue : codeIfFalse; (DIDN'T CODE IT)
-*/
 
 // SWITCH = Replaces many else / if statements 
 let day = 4 ;
@@ -195,3 +194,25 @@ switch(day){
     default:
         console.log(`${day} is not a day...`)        // Like an else statement
 }
+*/
+
+// String Methods: Allows me to work with text (strings)
+
+let userName = "Emmanuel";
+
+console.log(userName.charAt(0)) ;  // 0 is the index (E) - Returns letter at index of 0
+console.log(userName.indexOf("E"));   // Returns index of E
+console.log(userName.length);      // length of string
+console.log(userName.trim());      // Trims any whitespace
+console.log(userName.toLowerCase());  // Returns lowercase string
+console.log(userName.repeat(3))       // Returns string x3
+let result = userName.startsWith("E") // Can also use .endsWith()
+console.log(result)                   // Returns Boolean Value 
+console.log(userName.includes("E"))   // Returns Boolean Value 
+
+let phoneNumber = "123-456-7890"
+
+phoneNumber = phoneNumber.replaceAll("-", " ")  // replace all dashes with spaces
+phoneNumber = phoneNumber.padStart(15, "0")     // Defines the length of the string as 15 & fills the start woth 0s
+phoneNumber = phoneNumber.padEnd(15, "0")       // Same but end
+console.log(phoneNumber)
