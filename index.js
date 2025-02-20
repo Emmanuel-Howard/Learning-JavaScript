@@ -132,7 +132,7 @@ if(age >= 16){
 else{
     console.log("You are not old enough to have a license...")
 }
-*/
+
 let age = 0; // elsee if statements
 
 if(age >= 18){
@@ -144,3 +144,37 @@ else if(age <= 0){
 else{
     console.log("You must be 18+ to drink")
 }
+
+// Checkboxes & Radio Buttons
+const myCheckBox = document.getElementById("myCheckBox")
+const visaBtn = document.getElementById("visaBtn")
+const masterBtn = document.getElementById("masterBtn")
+const debitBtn = document.getElementById("debitBtn")
+const mySubmit = document.getElementById("mySubmit")
+const subResult = document.getElementById("subResult")
+const paymentResult = document.getElementById("paymentResult")
+
+mySubmit.onclick = function(){
+    if(myCheckBox.checked){
+        subResult.textContent = "You are subscribed";
+    }
+    else{
+        subResult.textContent = "You are not subscribed";
+    }
+
+    if(visaBtn.checked){
+        paymentResult.textContent = "You have chosen to pay with Visa";
+    }
+    else if(masterBtn.checked){
+        paymentResult.textContent = "You have chosen to pay with Mastercard";
+    }
+    else if(debitBtn.checked){
+        paymentResult.textContent = "You have chosen to pay with Debit";
+    }
+    else{
+        paymentResult.textContent = "You haven't yet selected a payment method...";
+    }
+    }   
+*/
+
+// Ternary Operator ? codeIfTrue : codeIfFalse;
