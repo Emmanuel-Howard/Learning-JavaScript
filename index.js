@@ -194,7 +194,6 @@ switch(day){
     default:
         console.log(`${day} is not a day...`)        // Like an else statement
 }
-*/
 
 // String Methods: Allows me to work with text (strings)
 
@@ -216,3 +215,16 @@ phoneNumber = phoneNumber.replaceAll("-", " ")  // replace all dashes with space
 phoneNumber = phoneNumber.padStart(15, "0")     // Defines the length of the string as 15 & fills the start woth 0s
 phoneNumber = phoneNumber.padEnd(15, "0")       // Same but end
 console.log(phoneNumber)
+*/
+
+// String Slicing = Creating a substring from a portion of another string
+
+let fullName = "Emmanuel Howard";
+
+// let firstName = fullName.slice(0, 5)  ;  // Use built-in slice method + index
+// OR: To find names regardless of length
+let firstName = fullName.slice(0, fullName.indexOf(" "));        // Slice from 0 to the first space
+let lastName = fullName.slice(fullName.indexOf(" ") + 1)        // Slice from the letter after the first space
+
+console.log(firstName)
+console.log(lastName)
