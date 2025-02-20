@@ -1,19 +1,25 @@
-/* Print using this console.log() function
+/* 
+Print using this console.log() function
 console.log("Hello World!");
-console.log("Hello World #2");
-
+console.log("Hello World #2"); 
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Pop up using this alert() function
 // document.getElementById("myh1").textContent = "Hello!";
 // document.getElementById("myP").textContent = "How are you?";
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Variables: A decleration (let x) & an assignement (x=100)
 // let age = 21;
 let salary = 10.99;
 console.log(age); // console.log is a function that prints to the console for the dev
 console.log(`You are ${age} years old and make ${salary} per hour`)
 console.log(typeof age); // Shows type
-
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Data Types: Number, String, Boolean, Object, Array
 let num = 100; // Number
 let firstname = "John"; // String
@@ -24,7 +30,9 @@ let arr = [10, 20, 30]; // Array
 document.getElementById("p1").textContent = firstname;
 document.getElementById("p2").textContent = `${firstname} is ${age} years old!`;
 document.getElementById("p3").textContent = salary;
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // arithmatic operators: +, -, *, /, %, ++, --
 let students = 30;
 students = students + 1 // or students += 1;
@@ -34,14 +42,15 @@ students = students / 2
 // students = students ** 2 // exponent operator
 students = students % 2; // remainder when divided by 2 (modulus)
 console.log(students);
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // How to accept User input:
 // 1. Easy Way (Window Prompt)
 
 /* let username;
 username = window.prompt("What is your username: ")
 console.log(username); 
-
 
 // 2. Professional Way (HTML Textbox)
 let username;
@@ -50,7 +59,9 @@ document.getElementById("mysubmit").onclick = function(){
     username = document.getElementById("mytext").value;
     document.getElementById("myh1").textContent = `Welcome ${username}`
 }   
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Type conversion 
 let age = window.prompt("How old are you?")
 age = Number(age);
@@ -68,8 +79,9 @@ z = Boolean(z);
 console.log(x, typeof x)
 console.log(y, typeof y)
 console.log(z, typeof z)
-
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Constants (const) = variable that can't be changed
 const PI = 3.14159
 let radius;
@@ -84,7 +96,9 @@ document.getElementById("mysubmit").onclick = function(){
 
     document.getElementById("result").textContent = `Circumference: ${circumference}`; 
 }
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Math
 Math.PI
 let x = 3.21;
@@ -95,9 +109,9 @@ console.log(Math.PI)
 // z = Math.floor(x)      (round down)
 let max = Math.max(x,y,z);
 console.log(max) 
-
-
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // If statements
 let time = 14  // time
 if(time < 12){
@@ -144,7 +158,9 @@ else if(age <= 0){
 else{
     console.log("You must be 18+ to drink")
 }
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Checkboxes & Radio Buttons
 const myCheckBox = document.getElementById("myCheckBox")
 const visaBtn = document.getElementById("visaBtn")
@@ -175,9 +191,13 @@ mySubmit.onclick = function(){
         paymentResult.textContent = "You haven't yet selected a payment method...";
     }
     }   
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // Ternary Operator ? codeIfTrue : codeIfFalse; (DIDN'T CODE IT)
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // SWITCH = Replaces many else / if statements 
 let day = 4 ;
 
@@ -194,7 +214,9 @@ switch(day){
     default:
         console.log(`${day} is not a day...`)        // Like an else statement
 }
-
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
 // String Methods: Allows me to work with text (strings)
 
 let userName = "Emmanuel";
@@ -215,8 +237,9 @@ phoneNumber = phoneNumber.replaceAll("-", " ")  // replace all dashes with space
 phoneNumber = phoneNumber.padStart(15, "0")     // Defines the length of the string as 15 & fills the start woth 0s
 phoneNumber = phoneNumber.padEnd(15, "0")       // Same but end
 console.log(phoneNumber)
+--------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // String Slicing = Creating a substring from a portion of another string
 
 let fullName = "Emmanuel Howard";
@@ -228,3 +251,8 @@ let lastName = fullName.slice(fullName.indexOf(" ") + 1)        // Slice from th
 
 console.log(firstName)
 console.log(lastName)
+--------------------------------------------------------------------------------------------------------------------
+*/
+
+// Method Chaining = Calling one method after another in one continous line of code
+
