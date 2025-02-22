@@ -362,7 +362,7 @@ console.log(answer)
 // = Like in Python
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // Array = A variable like structire that can hold more than 1 value
 // Like a list in python
 
@@ -383,3 +383,20 @@ for(let i=0; i< fruits.length; i++){  // Will loop through all the elements
 for(let fruit of fruits){
     console.log(fruit);
 }
+    --------------------------------------------------------------------------------------------------------------------
+*/
+
+// Spread Operator = "..." Allows an iterable (ex.array) to be unpacked into multiple elements
+
+let numbers = [1, 2, 3, 4, 5];
+let maximum = Math.max(numbers); 
+console.log(maximum);// In this case, max won't be logged since its array isn't unpacked
+
+let minimum = Math.min(...numbers); // ... unpacks the elements
+console.log(minimum); // Now, this works
+
+let fruits = ["apple", "banana", "orange"];
+let vegetables = ["carrots", "orange", "celery"];
+
+let food = [...fruits, ...vegetables]; // Can combine multiple arrays
+console.log(food)
