@@ -363,3 +363,23 @@ console.log(answer)
 --------------------------------------------------------------------------------------------------------------------
 */
 
+// Array = A variable like structire that can hold more than 1 value
+// Like a list in python
+
+let fruits = ["apple", "pineapple", "banana"];
+fruits.push("coconut"); // Will add element to the end 
+fruits.unshift("Grape");  // Will add element to front
+fruits.sort(); // Sorts alphabetically 
+
+let numOfFruits = fruits.length; // Define length
+let index = fruits.indexOf("apple") // Will log the index
+
+console.log(fruits[0]); // Can add index
+
+for(let i=0; i< fruits.length; i++){  // Will loop through all the elements  
+    console.log(fruits[i]);
+}
+// This is a shorter for loop. Replace fruit with anything
+for(let fruit of fruits){
+    console.log(fruit);
+}
