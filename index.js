@@ -320,7 +320,7 @@ do{
     console.log(`Your name is ${username}.`)
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // for loop = repeat some code a limited amount of times
 
 for(let i = 0; i < 10; i+=2){      // Set i = 0, and add 1 as long as under 10
@@ -337,4 +337,29 @@ for(let i = 20; i > 0; i-=1){
         console.log(i)
     }
 }
-    
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
+// Function = A section of reusable code
+function happyBirthday(name){                  // Creating the function with a parameter
+    console.log(`Happy Birthday to ${name}!`)
+};
+
+happyBirthday("Emmanuel"); // Calling it with an argument. Seperate args with ,
+
+function add(x, y){
+    let result = x + y
+    return result;  // This returns the result
+}
+
+let answer = add(2,3);  // Storing result in another variable 
+console.log(answer)
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
+// Variable scope (local & global variables)
+// In a function = local. They can't see inside of other functions.
+// = Like in Python
+--------------------------------------------------------------------------------------------------------------------
+*/
+
