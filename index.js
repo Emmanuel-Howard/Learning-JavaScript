@@ -383,9 +383,9 @@ for(let i=0; i< fruits.length; i++){  // Will loop through all the elements
 for(let fruit of fruits){
     console.log(fruit);
 }
-    --------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // Spread Operator = "..." Allows an iterable (ex.array) to be unpacked into multiple elements
 
 let numbers = [1, 2, 3, 4, 5];
@@ -400,3 +400,24 @@ let vegetables = ["carrots", "orange", "celery"];
 
 let food = [...fruits, ...vegetables]; // Can combine multiple arrays
 console.log(food)
+ --------------------------------------------------------------------------------------------------------------------
+*/
+/*
+// Rest Parameters = (...rest) allows a function work with a variable number of arguments bu bundling them into an array 
+// The opposite of a spread, as it bundles elements
+// uhh.. read on it when needed cuz wtf
+
+function openFridge(...foods){   // Rest Parameter: Combining foods
+    console.log(...foods);     // NOTE: I use ... as a spread operator, removing them from the new array
+}
+
+const food1 = "pizza";
+const food2 = "apple";
+const food3 = "sushi";
+const food4 = "chips";
+
+openFridge(food1, food2, food3, food4);  // Logging each food into foods
+--------------------------------------------------------------------------------------------------------------------
+*/
+
+//
