@@ -453,6 +453,25 @@ function display(result){
 sum(display, 3, 2);
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // forEach() = method used to iterate over the elements of an array and apply a specified
             // (continue) function (callback) to each element
+
+            // element, index, array are provided
+            // array.forEach(callback)
+
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(double); // Callback of double doubles all elements (numbers)
+numbers.forEach(display); // Iterates over each element in numbers
+
+function display(element){
+    console.log(element);
+}
+
+function double(element, index, array){ 
+    array[index] = element * 2; // During each iteration, take the index in the array, and * 2
+}
+--------------------------------------------------------------------------------------------------------------------
+*/
+
