@@ -419,5 +419,40 @@ const food4 = "chips";
 openFridge(food1, food2, food3, food4);  // Logging each food into foods
 --------------------------------------------------------------------------------------------------------------------
 */
+/*
+// Callback = A function that is passed as an argument to another function.
+// Uses: Reading a file, Network requests, Interacting with databases
+// = "Hey, when you're done, call this next!"
 
-//
+function hello(callback){
+    console.log("hello")
+    callback();           // Since we add the callback, it does the arg(goodbye) after
+};
+function goodbye(){
+    console.log("goodbye")  
+};
+// hello();
+// goodbye(); // In this case, we are calling goodbye after hello. If hello was reading a big file, goodbye would be logged before
+            // To prevent this, we'll pass goodbye as an argument in hello
+// So:
+hello(goodbye);
+
+// So: 1. Add callback to main function
+//     2. Add the 2nd function as an arg when calling them
+
+// Example 2:
+function sum(callback, x, y){   // Can have multiple parameters
+    let result = x + y;
+    callback(result);
+}
+
+function display(result){
+    console.log(result)
+}
+
+sum(display, 3, 2);
+--------------------------------------------------------------------------------------------------------------------
+*/
+
+// forEach() = method used to iterate over the elements of an array and apply a specified
+            // (continue) function (callback) to each element
