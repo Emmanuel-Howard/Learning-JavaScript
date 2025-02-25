@@ -516,6 +516,18 @@ console.log(longWords)
 function getLongWords(element){
     return element.length >=5;
 }
-    --------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 */
+/*
+// .reduce() = reduces the elements of an array to a single value
 
+const prices = [12.99, 14, 4, 2, 10, 29.23];
+const total = prices.reduce(sum);
+console.log(`Your total is $${total}.`);
+
+
+function sum(accumulator, element){
+    return accumulator + element;
+}
+--------------------------------------------------------------------------------------------------------------------
+*/
