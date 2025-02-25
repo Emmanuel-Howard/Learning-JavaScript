@@ -531,3 +531,19 @@ function sum(accumulator, element){
 }
 --------------------------------------------------------------------------------------------------------------------
 */
+/*
+// Function expressions = A way to define functions as values or variables
+// Benefit: Won't polute the global name space with function names
+// Also used in: Callbacks in asynchronus operations, higher order functions,
+//    closures, and event listeners.
+
+const hello = function(){
+    console.log("Hello!");  // In this first case, we create a const. &
+}                           // then pass it into a function
+// setTimeout(hello, 3000);
+
+setTimeout(function(){    // In this case, we pass a function as an argument
+    console.log("Hello00");
+}, 3000);
+--------------------------------------------------------------------------------------------------------------------
+*/
