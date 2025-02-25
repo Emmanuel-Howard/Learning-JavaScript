@@ -474,7 +474,7 @@ function double(element, index, array){
 }
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // . map() = accepts a callback and applies that function
     // to each element of an array, then returns a new array
 
@@ -486,6 +486,8 @@ function square(element){
     return Math.pow(element, 2);
 }
 
+// Example 2:
+
 const students = ["jack", "elena", "marty"];
 const studentsUpper = students.map(uppercase)
 console.log(studentsUpper)
@@ -493,3 +495,27 @@ console.log(studentsUpper)
 function uppercase(element){
     return element.toUpperCase();
 }
+--------------------------------------------------------------------------------------------------------------------
+*/
+/*
+// .filter() = creates a new array by filtering out elements
+
+let numbers = [1,2,3,4,5,6,7];
+let evenNums = numbers.filter(isEven); // Filters out false booleans
+console.log(evenNums)
+
+function isEven(element){  // This function logs a Boolean
+    return element % 2 === 0;
+}
+
+// Example 2:
+const words = ["kiwi", "orange", "coconut", "happy", "sad"];
+const longWords = words.filter(getLongWords);
+console.log(longWords)
+
+function getLongWords(element){
+    return element.length >=5;
+}
+    --------------------------------------------------------------------------------------------------------------------
+*/
+
