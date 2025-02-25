@@ -475,3 +475,21 @@ function double(element, index, array){
 --------------------------------------------------------------------------------------------------------------------
 */
 
+// . map() = accepts a callback and applies that function
+    // to each element of an array, then returns a new array
+
+const number = [1,2,3,4,5];
+const squares = number.map(square);
+console.log(squares)
+
+function square(element){
+    return Math.pow(element, 2);
+}
+
+const students = ["jack", "elena", "marty"];
+const studentsUpper = students.map(uppercase)
+console.log(studentsUpper)
+
+function uppercase(element){
+    return element.toUpperCase();
+}
