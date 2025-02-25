@@ -547,3 +547,20 @@ setTimeout(function(){    // In this case, we pass a function as an argument
 }, 3000);
 --------------------------------------------------------------------------------------------------------------------
 */
+
+// Arrow functions = a concise way to write function expressions
+//   Good for simple functions used only once.
+//   (parameters) => some code
+
+const hello = function(){
+    console.log("Hello!");  // This is a normal function
+};
+hello()
+
+// Arrow function:
+const hello2 = () => console.log("Hello2!")
+hello2() // Parameters (none) => code
+
+// We can also pass arguments
+const hello3 = (name) => console.log(`Hello ${name}!`)
+hello3("Emmanuel")
