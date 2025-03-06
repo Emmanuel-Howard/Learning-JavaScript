@@ -566,7 +566,7 @@ const hello3 = (name) => console.log(`Hello ${name}!`)
 hello3("Emmanuel")
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // Objects: A collection of related properties (what an object has) and/or methods (what it can do)
 //          Can represent real world objects (people, products, places)
 //          object = {key;value,
@@ -590,3 +590,27 @@ const person2 = {
 };
 console.log(person2.sayHello());
 console.log(person2.eat())
+*/
+
+// this = reference to the object where THIS is used
+//        (the object depends on the immediate context)
+//         person.name = this.name
+
+const person1 = { 
+    firstName: "Jack",
+    lastName: "Howard",
+    age: 30,
+    isEmployed: true,
+    sayHello: function(){console.log(`Hello, I'm ${this.firstName}`)},
+};
+person1.sayHello(); // Without THIS, the firstName would'nt be found.
+
+const person2 = {
+    firstName: "Edward",
+    lastName: "Reymond",
+    age: 22,
+    isEmployed: false,
+    sayHello: function(){console.log(`Hello, I'm ${this.firstName}`)},
+    eat: () => console.log(`${this.firstName} eats.`)
+};
+person2.eat() // In an ARROW function, THIS doesn't work!
