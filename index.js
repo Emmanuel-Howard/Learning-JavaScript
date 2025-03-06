@@ -567,4 +567,26 @@ hello3("Emmanuel")
 --------------------------------------------------------------------------------------------------------------------
 */
 
-// Objects:
+// Objects: A collection of related properties (what an object has) and/or methods (what it can do)
+//          Can represent real world objects (people, products, places)
+//          object = {key;value,
+//                     function()}
+
+const person1 = {        // We are defining properties for the object
+    firstName: "Jack",
+    lastName: "Howard",
+    age: 30,
+    isEmployed: true
+};
+console.log(person1.firstName);  // Gives firstName
+
+const person2 = {
+    firstName: "Edward",
+    lastName: "Reymond",
+    age: 22,
+    isEmployed: false,
+    sayHello: function(){console.log(`Hello, I'm ${this.firstName}`)},
+    eat: () => console.log("Edward eats")  // This is an arrow function
+};
+console.log(person2.sayHello());
+console.log(person2.eat())
