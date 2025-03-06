@@ -617,7 +617,7 @@ const person2 = {
 person2.eat() // In an ARROW function, THIS doesn't work!
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // Constructor = Special method for defining the properties
 //               and methods of objects.
 
@@ -630,7 +630,7 @@ function Car(make, model, year, color){  // Make sure () name is Capital
 }
 
 // We can then reuse the function on multiple objects, without having to type manually every time
-const car1 = new Car("Tesla", "S", "2025", "Orange")
+const car1 = new Car("Tesla", "S", "2025", "Orange")   // MUST use NEW keyword
 const car2 = new Car("Ford", "Mustang", "1993", "brown")
 
 console.log(car1.make)
@@ -638,4 +638,37 @@ console.log(car1.model)
 console.log(car2.year)
 console.log(car2.color)
 car2.drive()
+--------------------------------------------------------------------------------------------------------------------
+*/
 
+// Class = Provides a more structured way to work with objects
+//         compared to traditional constructor functions
+//         ex. static keyword, encapsulation, inheritance
+
+// Here, we create a class of product
+class Product{   // Capitalized
+    constructor(name,price){  // We then define properties with a constructor
+        this.name = name;
+        this.price = price;
+    }
+
+// Here, we create a display function (in the class to access local variable)
+    displayProduct(){
+        console.log(`Product: ${this.name}`);
+        console.log(`Price: ${this.price.toFixed(2)}`);  // 2 decimals
+    }
+
+    calcTotal(salesTax){
+        return this.price + (this.price * salesTax);
+    }
+}
+
+const product1 = new Product("Shirt", 19.99);  // Create product with NEW keyword
+product1.displayProduct(); // Call display function
+
+const product2 = new Product("Pants", 15.50);
+product2.displayProduct();
+
+const salesTax = 0.05;
+const total = product1.calcTotal(salesTax);
+console.log(`Your total price is ${total.toFixed(2)}.`)
