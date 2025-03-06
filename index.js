@@ -590,8 +590,9 @@ const person2 = {
 };
 console.log(person2.sayHello());
 console.log(person2.eat())
+--------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // this = reference to the object where THIS is used
 //        (the object depends on the immediate context)
 //         person.name = this.name
@@ -614,3 +615,27 @@ const person2 = {
     eat: () => console.log(`${this.firstName} eats.`)
 };
 person2.eat() // In an ARROW function, THIS doesn't work!
+--------------------------------------------------------------------------------------------------------------------
+*/
+
+// Constructor = Special method for defining the properties
+//               and methods of objects.
+
+function Car(make, model, year, color){  // Make sure () name is Capital
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color;
+    this.drive = function(){console.log(`You drive the ${this.make}.`)}
+}
+
+// We can then reuse the function on multiple objects, without having to type manually every time
+const car1 = new Car("Tesla", "S", "2025", "Orange")
+const car2 = new Car("Ford", "Mustang", "1993", "brown")
+
+console.log(car1.make)
+console.log(car1.model)
+console.log(car2.year)
+console.log(car2.color)
+car2.drive()
+
