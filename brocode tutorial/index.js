@@ -640,7 +640,7 @@ console.log(car2.color)
 car2.drive()
 --------------------------------------------------------------------------------------------------------------------
 */
-
+/*
 // Class = Provides a more structured way to work with objects
 //         compared to traditional constructor functions
 //         ex. static keyword, encapsulation, inheritance
@@ -671,4 +671,6 @@ product2.displayProduct();
 
 const salesTax = 0.05;
 const total = product1.calcTotal(salesTax);
-console.log(`Your total price is ${total.toFixed(2)}.`)
+console.log(`Your total price is ${total.toFixed(2)}.`);
+--------------------------------------------------------------------------------------------------------------------
+*/
